@@ -27,6 +27,7 @@ def reorg_attack_probability(q: float, z: int):
 reorg_attack_probability(0.1, 4)
 
 
+# TODO understand the difference
 def attacker_success_probability(q, z):
     # Calculate the probability of a successful reorganization attack by an attacker
     # q: Share of the network's hashrate possessed by the attacker
