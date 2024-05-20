@@ -10,4 +10,4 @@ RUN poetry config virtualenvs.create false
 RUN poetry install --no-dev
 
 # CMD ["poetry", "run", "python", "draft/main.py"]
-CMD ["poetry", "run", "python", "bitcoin-learn/verify_block.py"]
+CMD ["poetry", "run", "python", "bitcoin-learn/verify_block/verify_block.py"]
