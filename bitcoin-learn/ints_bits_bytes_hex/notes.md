@@ -53,7 +53,7 @@ Cf. [here](https://www.binaryhexconverter.com/hex-to-binary-converter).
 
 - Humans use integers (`[0-9]` in RegEx, so 10 unique values, so base 10).
 - Computers store everything as bits – for technical reasons – which is hard to read for humans
-  - Excerpt from [here](https://thecomputersciencebook.com/posts/bits-bytes-and-hexadecimal/): “How long does it take you to tell whether `0b1111111111111111` is the same as `0b111111111111111?`”
+  - Excerpt from [here](https://thecomputersciencebook.com/posts/bits-bytes-and-hexadecimal/): “How long does it take you to tell whether `0b1111111111111111` is the same as `0b111111111111111`?”
 - Binary is converted to hex to help humans read it.
   - It would not be ideal to use integers to represent bits because there’s no x such that $2^x = 10$. We can still map `0b1` to integer 1 and `0b0` to integer 0, but then integers 2-9 are unused while we’d want the 10 integer digits to correspond, collectively (1:1 mapping), to all unique values of an n-long sequence of bits.
   - And a value is 4 times more compact in hex than in bits.
