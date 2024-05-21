@@ -29,7 +29,7 @@ A sequence of n bits has $2^n$ unique values. Since two is the number of unique 
 
 16 unique values, so base 16.
 
-“Hex” is short for “hexadecimal digit(s)/value”. And, by convention, hex values (a sequence of 1+ hex digits) are prefixed by “0x” (this convention comes from the C language). 
+“Hex” is short for “hexadecimal digit(s)/value”. And, by convention, hex values (a sequence of 1+ hex digits) are prefixed by `0x` (this convention comes from the C language). 
 
 A sequence of n hex can have $16^n$ unique values. So, 4 bits ($2^4 = 16$ unique values) convert to 1 hex.
 
@@ -58,5 +58,5 @@ Cf. [here](https://www.binaryhexconverter.com/hex-to-binary-converter).
   - It would not be ideal to use integers to represent bits because there’s no x such that $2^x = 10$. We can still map `0b1` to integer 1 and `0b0` to integer 0, but then integers 2-9 are unused while we’d want the 10 integer digits to correspond, collectively (1:1 mapping), to all unique values of an n-long sequence of bits.
   - And a value is 4 times more compact in hex than in bits.
     - Following up on the previous example: 
-      - Delineate 4-bit sequences: `0b 1111 1111 1111 1111` (spaces are introduced for readability). We have $4*4 = 16$ bits.
-      - Each 4-bit sequence can be compacted into a single hex to convert this 16-digit long value into a $16/4 = 4$-digit long value: `0x F F F F` (idem). This is much more human-friendly.
+      - Delineate 4-bit sequences: `0b 1111 1111 1111 1111`. We have $4*4 = 16$ bits.
+      - Each 4-bit sequence can be compacted into a single hex to convert this 16-digit long value into a $16/4 = 4$-digit long value: `0x F F F F`. This is much more human-friendly.
