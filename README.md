@@ -13,12 +13,20 @@ Each topic I cover corresponds to a subdirectory in `bitcoin-learn/`:
 - [`verify_block`](https://github.com/Konilo/bitcoin-learn/blob/main/bitcoin-learn/verify_block/run.py): hashing and consensus verification on actual Bitcoin blocks
 - [`compute_reorg_attack_probability`](https://github.com/Konilo/bitcoin-learn/blob/main/bitcoin-learn/compute_reorg_attack_probability/notes.md): probabilities and the risk mining power concentration poses
 
+
 ## Getting Started
 
-To get started with the repository, clone it to your local machine:
-
+To get started, you'll need to have Docker installed and to run this:
 ```sh
 git clone git@github.com:yourusername/bitcoin-learn.git
 cd bitcoin-learn
 make run-dev-env
+```
+
+Inside the Docker container, you can run this, for example:
+```sh
+# List available subcommands
+python /app/bitcoin-learn/main.py --help
+# Get help on a specific subcommand
+python /app/bitcoin-learn/main.py convert_number --help
 ```
