@@ -1,0 +1,71 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "verify_block",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/bitcoin-learn/main.py",
+            "args": [
+                "verify_block"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "pow_iterate",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/bitcoin-learn/main.py",
+            "args": [
+                "pow_iterate"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "convert_number",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/bitcoin-learn/main.py",
+            "args": [
+                "convert_number",
+                "23456",
+                "10",
+                "16"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "compute_reorg_attack_probability",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/bitcoin-learn/main.py",
+            "args": [
+                "compute_reorg_attack_probability",
+                "0.1",
+                "4",
+                "original"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Tests",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/usr/local/bin/pytest",
+            "args": [
+                "${workspaceFolder}",
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}

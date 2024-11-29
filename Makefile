@@ -1,3 +1,2 @@
-run-app:
-	docker build -t bitcoin-learn .
-	docker run bitcoin-learn
+run-dev-env:
+	bash bin/run_dev_env.sh
