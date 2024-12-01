@@ -3,15 +3,6 @@ import os
 import os
 import importlib
 import typer
-import logging
-
-
-logging.basicConfig(
-    format="%(asctime)s %(levelname)-8s %(message)s",
-    level=logging.INFO,
-    datefmt="%Y-%m-%d %H:%M:%S",
-)
-logger = logging.getLogger(__name__)
 
 
 def load_and_register_commands(
@@ -42,7 +33,6 @@ def load_and_register_commands(
 
             # If the function exists, add it as a command to the typer app
             if function and callable(function):
-                logger.info(f"Registering command: {dir_name}")
                 app.command(name=dir_name)(function)
 
 

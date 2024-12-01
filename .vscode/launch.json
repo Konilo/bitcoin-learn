@@ -51,6 +51,16 @@
             "console": "integratedTerminal"
         },
         {
+            "name": "transact",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/bitcoin-learn/main.py",
+            "args": [
+                "transact",
+            ],
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Tests",
             "type": "debugpy",
             "request": "launch",

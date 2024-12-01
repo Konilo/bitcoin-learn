@@ -2,7 +2,7 @@
 
 A “51% attack” is a type of attack that, between others, would allow a malicious attacker (e.g., someone controlling a pool of mining nodes) to double spend an amount of bitcoin. Let me explain. (For now, don’t pay attention to the “51%”, we’ll come back to it later).
 
-Bitcoin considers that the “true” blockchain is the one that contains the most blocks and, more precisely, the most proof of work (which, I would say, is calculated by summing the mining difficulty of each block in a chain).
+Bitcoin considers that the “true” blockchain is the one that contains the most blocks and, more precisely, the most proof of work (which is calculated by [summing the mining difficulty](https://learnmeabitcoin.com/technical/blockchain/longest-chain/) of each block in a chain, basically).
 
 Given that, when a node builds a new block before any other node (let’s say block n + 1), it creates the longest existing blockchain which, when its broadcasted to the other nodes, is adopted as the new “true” blockchain. At that point, all nodes stop searching for a nonce to build block n + 1 and they switch to searching for a nonce that’s valid to build block n + 2.
 
