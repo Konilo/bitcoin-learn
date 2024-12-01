@@ -40,6 +40,6 @@ Further down, Satoshi proposes a more complex and more operational formula to de
 
 As explained above, Satoshi focuses on catching up the true chain, but the attacker needs to surpass it to trigger a reorg and succeed. So, a $+ 1$ needs to be added to the $z - k$ exponent to measure the probability of success.
 
-And why is this attack called a “51% attack”? You might have told yourself that owning 51% of the network’s hashrate is not necessary to conduct it, and that’s correct. But as soon as the attacker has >=51% (>=50% actually, as explained earlier based on the random walk mathematics), it has a 100% chance of success. 
+And why is this attack called a “51% attack”? You might have told yourself that owning 51% of the network’s hashrate is not necessary to conduct it, and that’s correct. But as soon as the attacker has &ge;51% (or &ge;50% based on the random walk mathematics), it has a 100% chance of success. 
 
 Double spending is one (probably the most feared) consequence of a 51% attack, but poses more threats that I won’t expand on. A quick overview is proposed [here](https://www.investopedia.com/terms/1/51-attack.asp).
